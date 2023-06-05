@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container
+{
+    width: 82%;
+    /* height: 600px; */
+}
+.text
+{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 21em;
+    margin-bottom: 40px;
+}
+.text .reliable
+{
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: hsl(234, 12%, 34%);
+}
+.power
+{
+    margin-bottom: 15px;
+    color: hsl(234, 12%, 34%);
+}
+.para
+{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+.boxex
+{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+ gap: 20px;
+ margin-bottom: 150px;
+}
+.Supervisor
+{
+    grid-row: 2/4;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.team
+{
+    grid-row:1/3 ;
+    border-top:4px solid hsl(0, 78%, 62%);
+}
+.karma
+{
+    grid-row: 3/5;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculator
+{
+    grid-row: 2/4;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.box{
+  width: 400px;
+  padding: 20px 40px 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 14px 20px -5px rgba(218,228,240,1);
+}
+.box h3
+{
+    margin-bottom: 10px;
+    color: hsl(234, 12%, 34%);
+}
+.box p
+{
+    color:  hsl(229, 6%, 66%);
+    margin-bottom: 40px;
+    font-size: 0.9em;
+}
+.box img
+{
+    float: right;
+    margin-bottom: 15px;
+}
+footer
+{
+    margin-top: 40px;
+    position: absolute;
+    bottom: 20px;
+}
+footer a
+{
+    text-decoration: none;
+}
+@media(max-width:600px)
+{
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container
+    {
+        width: 340px;
+    }
+    .text
+    {
+      padding: 0 10px;
+    }
+    .boxex
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box
+    {
+        width: 100%;
+    }
+    footer{
+        width: 300px;
+        text-align: center;
+    }
+}
+@media(max-width:400px)
+{
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container
+    {
+        width: 300px;
+    }
+    .text
+    {
+      padding: 0 0px;
+    }
+    .boxex
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box
+    {
+        width: 100%;
+    }
+    footer{
+        width: 300px;
+        text-align: center;
+    }   
+}
